@@ -30,3 +30,23 @@ var Cat = mongoose.model('Cat', catSchema);
 module.exports = Cat;
 //Then export it, name of model is going to be cat 
 
+
+/*
+Why USE Mongoose 
+
+You can use mongodb client =>
+
+var MongoClient = require('mongodb').MongoClient;
+
+//Connnect to the db
+MongoClient.connect("mongodb://localhost:27017/exampleDb",
+function (err, db) {
+    if(!err){
+        console.log(We are connected");
+    }
+});
+
+Because MongoDB is so eay to use, the basci Node.js driver can be the best solutin for many applications. However, 
+if you need validations, associations, and other high-lvel data modeling functions, then an object document mapper may
+be helpful. Use mongoose for validation, defaults, query builder, pseudo-joins, life-cycle managment. 
+*/

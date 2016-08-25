@@ -5,7 +5,8 @@ definition files into your workspace. This tool can download the requested defin
 of sources, including the DefinitelyTyped repository. As we did with the Express Generator, we will install 
 the Typings command line tool globally using NPM so that you can use the tool in any application you create.
 
-npm install -g typings
+npm install -g typings => When you put g, it means it will be installed as a global package and will be available anywhere
+                          on your system
 Tip: Typings has a number of options for configuring where and how definition files are downloaded. 
 From the terminal, run typings --help for more information.
 Go back to the file app.js and notice that if you hover over the Node.js global object __dirname, 
@@ -38,6 +39,14 @@ http://brianflove.com/2016/03/29/typescript-express-node-js/
 
 INSTALLING ESLINT DO THIS:
 npm install -g eslint eslint-plugin-react babel-eslint eslint-config-defaults
+
+Tools and Packages Used
+The Express-Generator Package can be used to generate a scaffolded express application. Basic application with
+some routes and views and basic folder structure. Express Generator uses view engine called Jade, 2 other view engines,
+Hokan and EJS, are also supported. 
+A view engine is used to render html back to the client, brings up Bootstrap. And Robomongo tool important for efficient
+use of mongodb. 
+
 */
 
 //To start a node application, do node init -y in console to create package.json file
